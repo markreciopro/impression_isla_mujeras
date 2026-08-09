@@ -141,7 +141,7 @@
     </footer>
   </div>
 
- <!-- SLIDE 2: MARKET SEGMENT PERFORMANCE -->
+<!-- SLIDE 2: MARKET SEGMENT PERFORMANCE -->
 <div id="slide2" class="slide-container" role="tabpanel" aria-labelledby="tab-slide2">
   <header class="slide-header">
     <span class="brand-tag">Slide 02 // Segment Diagnostics</span>
@@ -155,7 +155,7 @@
         <h2 class="card-title" style="font-size: 1.2rem; margin-bottom: 16px;">Total Revenue & ADR by Market Segment Analysis</h2>
         <div class="chart-wrapper" style="width: 100%; overflow: hidden; display: flex; justify-content: center; align-items: center;">
           <img 
-            src="https://raw.githubusercontent.com/markreciopro/impression_isla_mujeras/main/slide%202.png" 
+            src="https://raw.githubusercontent.com/markreciopro/impression_isla_mujeras/main/slide_2.png" 
             alt="Segment Performance Analysis Chart" 
             style="width: 100%; max-width: 100%; height: auto; object-fit: contain; display: block;"
           >
@@ -166,25 +166,27 @@
         <div class="card">
           <h2 class="card-title">Methodology & Analytical Approach</h2>
           <ul class="bullet-list">
-            <li><strong>Relational Aggregation:</strong> Extracted data from <code>view_phase1_segment_performance</code> to group guest bookings by primary channel segments.</li>
-            <li><strong>Yield Density Analysis:</strong> Evaluated aggregate revenue alongside Average Daily Rate (ADR) to isolate rate integrity from channel commission erosion.</li>
+            <li><strong>Relational Aggregation:</strong> Extracted transaction-level records from <code>view_phase1_segment_performance</code> to group guest bookings into four core channels.</li>
+            <li><strong>Yield Density Analysis:</strong> Cross-referenced aggregate revenue volume against Average Daily Rate (ADR) to evaluate rate integrity and isolate commission dilution.</li>
           </ul>
         </div>
 
         <div class="card">
           <h2 class="card-title">Executive Segment Diagnostics</h2>
           <ul class="bullet-list">
-            <li><strong>Direct Transient Dominance:</strong> Direct bookings generate over <strong>$320,000</strong> while maintaining top-tier ADR (<strong>$1,450+</strong>), confirming strong organic luxury pull.</li>
-            <li><strong>Corporate Midweek Anchor:</strong> Corporate retreats contribute over <strong>$100,000</strong> with robust rate realization near <strong>$1,200</strong> ADR.</li>
-            <li><strong>Third-Party Dilution:</strong> OTA and Wholesale channels pull average rate down toward <strong>$850–$900</strong> baseline tiers.</li>
+            <li><strong>Direct Transient Volume Anchor:</strong> Direct bookings generate the highest overall revenue share at <strong>$299,205</strong> while holding premium rate integrity at <strong>$1,450 ADR</strong>.</li>
+            <li><strong>Wholesale Premium Yield:</strong> Wholesale Luxury achieves the highest unit rate realization at <strong>$1,860 ADR</strong> across <strong>$101,782</strong> total revenue, proving strong high-end package demand.</li>
+            <li><strong>Corporate Midweek Stability:</strong> Corporate Retreats deliver <strong>$140,806</strong> in room revenue at <strong>$1,200 ADR</strong>, serving as an essential occupancy bridge during non-weekend periods.</li>
+            <li><strong>OTA Net Yield Leakage:</strong> OTA / Luxury Travel captures <strong>$154,836</strong> in volume but significantly dilutes property realization with the lowest average rate at <strong>$900 ADR</strong>.</li>
           </ul>
         </div>
 
         <div class="card">
-          <h2 class="card-title">Channel Optimization Strategy</h2>
+          <h2 class="card-title">Channel Optimization Recommendations</h2>
           <ul class="bullet-list">
-            <li><strong>Direct Channel MLOS Controls:</strong> Apply 3-night Minimum Length of Stay (MLOS) restrictions on luxury suite classes during high-pacing arrival windows.</li>
-            <li><strong>Dynamic Wholesale Throttling:</strong> Restrict third-party inventory when 10-day rolling pace shows direct demand acceleration within 14 days of arrival.</li>
+            <li><strong>OTA Inventory Allocation Throttling:</strong> Implement dynamic inventory caps on OTA channels during high-demand windows, shifting inventory toward higher-yielding Direct Transient ($1,450) and Wholesale ($1,860) tiers.</li>
+            <li><strong>Direct Channel Length-of-Stay Rules:</strong> Apply 3-night Minimum Length of Stay (MLOS) restrictions on direct luxury suites during peak pacing lead times to maximize total folio value.</li>
+            <li><strong>Wholesale Package Parity Alignment:</strong> Audit third-party wholesale package bundling to ensure rate integrity ($1,860 ADR) is maintained without cannibalizing direct transient web traffic.</li>
           </ul>
         </div>
       </div>
@@ -196,6 +198,7 @@
     <span>Confidential // Prepared for Executive Leadership</span>
   </footer>
 </div>
+  
   
   <!-- SLIDE 3: PREDICTIVE MONTE CARLO SIMULATION -->
   <div id="slide3" class="slide-container" role="tabpanel" aria-labelledby="tab-slide3">
