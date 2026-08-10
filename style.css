@@ -1,0 +1,251 @@
+:root {
+  --navy: #1a365d;
+  --navy-dark: #0f2342;
+  --gold: #d69e2e;
+  --bg-main: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #2d3748;
+  --text-muted: #718096;
+  --border-color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  background-color: var(--navy-dark);
+  padding: 10px 16px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-bottom: 3px solid var(--gold);
+}
+
+.tab-btn {
+  background: transparent;
+  color: #a0aec0;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tab-btn.active {
+  color: var(--navy-dark);
+  background: var(--gold);
+}
+
+/* Slide Container */
+.slide-container {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 32px;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slide-container.active {
+  display: flex;
+}
+
+/* Slide Header */
+.slide-header {
+  margin-bottom: 20px;
+}
+
+.brand-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.slide-header h1 {
+  font-size: 1.6rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.slide-header p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* Slide Body Layouts */
+.slide-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid-2col-equal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid-2col-chart-focus {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 24px;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.stack-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.chart-card-large {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-wrapper-large {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 480px;
+}
+
+.chart-wrapper-large img {
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+  object-fit: contain;
+  display: block;
+}
+
+.card-number {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.bullet-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bullet-list li {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text-main);
+  position: relative;
+  padding-left: 14px;
+}
+
+.bullet-list li::before {
+  content: "▪";
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.property-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.property-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.img-credit {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 8px;
+}
+
+.img-credit a {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+/* Slide Footer */
+.slide-footer {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.slide-footer .brand {
+  font-weight: 700;
+  color: var(--navy);
+}
